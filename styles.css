@@ -1,0 +1,196 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: #007bff;
+}
+
+.contact-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-button:hover {
+  background-color: #0056b3;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+main {
+  padding: 20px;
+}
+
+#profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+#profile .desc {
+  max-width: 600px;
+}
+
+#profile .desc h1 {
+  font-size: 2.5rem;
+}
+
+#profile .desc h2 {
+  font-size: 2rem;
+  color: #007bff;
+}
+
+#profile .desc p {
+  font-size: 1.2rem;
+}
+
+#profile-info img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+.aboutMe, .myGoals, #current-time, #contact, #links {
+  margin-bottom: 40px;
+}
+
+.description {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact label {
+  margin: 10px 0 5px;
+}
+
+#contact input, #contact textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.useful-links{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+
+.useful-links a {
+  display: flex;
+  padding: 10px 0;
+  text-decoration: none;
+  color: black;
+}
+
+.useful-links a:hover {
+  text-decoration: underline;
+}
+
+.email{
+  text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  header {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .navbar {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+
+  .navbar.active {
+    display: flex;
+  }
+
+  .navbar a {
+    margin: 10px 0;
+    padding: 50px;
+    text-align: center;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .contact-button {
+    display: none;
+    margin-top: 10px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  #profile {
+    flex-direction: column;
+  }
+
+  #profile-info img {
+    width: 150px;
+    height: 150px;
+  }
+  .useful-links{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+}
